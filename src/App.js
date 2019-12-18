@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Counter from './Counter'
+import DisplayCounter from './DisplayCounter'
 import { createStore } from 'redux'
 import counterReducer from './reducer';
 import { Provider } from 'react-redux'
@@ -12,6 +13,7 @@ class App extends Component {
       <Provider store={store}>
         <div className="App">
           <Counter />
+          <DisplayCounter />
         </div>
       </Provider>
     );
